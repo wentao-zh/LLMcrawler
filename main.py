@@ -13,7 +13,6 @@ def fetch_hacker_news_topics():
     topics = []
 
     for title in titles:
-        print(title)
         if "language model" in title.text.lower() or "llm" in title.text.lower() or "gpt" in title.text.lower():
             topics.append({
                 'title': title.text,
