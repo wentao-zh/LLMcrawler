@@ -68,9 +68,7 @@ jobs:
         uses: SeineAI/SeineSailor@main # or release version tags
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          IBM_CLOUD_API_KEY: ${{ secrets.IBM_CLOUD_API_KEY }}
+          WATSONX_PROJECT_ID: ${{ secrets.WATSONX_PROJECT_ID }}
         with:
           debug: false
-          llm_api_type: openai
-          llm_light_model: gpt-3.5-turbo
-          llm_heavy_model: gpt-4
