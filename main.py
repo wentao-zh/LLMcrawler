@@ -9,7 +9,7 @@ def fetch_hacker_news_topics():
         return []
 
     soup = BeautifulSoup(response.text, 'html.parser')
-    titles = soup.find_all('a', class_='storylink')
+    titles = soup.find_all('a')
     topics = []
 
     for title in titles:
