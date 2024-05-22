@@ -68,7 +68,6 @@ jobs:
         uses: SeineAI/SeineSailor@main # or release version tags
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          IBM_CLOUD_API_KEY: ${{ secrets.IBM_CLOUD_API_KEY }}
-          WATSONX_PROJECT_ID: ${{ secrets.WATSONX_PROJECT_ID }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         with:
           debug: false
